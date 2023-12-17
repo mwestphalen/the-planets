@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+  <!-- Roboto Font from Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald&family=Roboto&display=swap"
+    rel="stylesheet">
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Title -->
+  <title>The Planets</title>
+</head>
+
+<body>
+
+  <!-- Navigation Bar -->
+  <div class="navbar nav">
+    <div class="logo mt-3">THE<br>PLANETS</div>
+    <div class="planets-list">
+      <button onclick="navigateTo('mercury')" id="mercuryBtn">MERCURY</button>
+      <button onclick="navigateTo('venus')" id="venusBtn">VENUS</button>
+      <button onclick="navigateTo('earth')" id="earthBtn">EARTH</button>
+      <button onclick="navigateTo('mars')" id="marsBtn">MARS</button>
+      <button onclick="navigateTo('jupiter')" id="jupiterBtn">JUPITER</button>
+      <button onclick="navigateTo('saturn')" id="saturnBtn">SATURN</button>
+      <button onclick="navigateTo('uranus')" id="uranusBtn">URANUS</button>
+      <button onclick="navigateTo('neptune')" id="neptuneBtn">NEPTUNE</button>
+    </div>
+  </div>
+  <hr style='background: grey;'>
+
+  <!-- Planet and Info -->
+  <div class="container mt-5">
+    <div class='row mt-5'>
+      <div class='col-lg-6'>
+        <div><img id='planet-image' src='images/earth.png' alt='Earth'></div>
+      </div>
+      <div class='col-lg-6'>
+        <h1 id='planet-name' class='text-center mt-3'>EARTH</h1>
+        <p id='planet-info' class="text-left">Our home planet, Earth, teems with life and diverse ecosystems. It's the
+          only known celestial body to support a rich tapestry of flora and fauna, with its moderate climate, liquid
+          water, and protective atmosphere fostering conditions suitable for life.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom row of Information -->
+  <div class="row justify-content-center mt-5">
+    <div class="col-lg-2 offset-lg-1 info-box">
+      <h2>REVOLUTION TIME</h2>
+      <p id='planet-revolution'></p>
+    </div>
+    <div class="col-lg-2 info-box">
+      <h2>GRAVITY</h2>
+      <p id='planet-gravity'></p>
+    </div>
+    <div class="col-lg-2 info-box">
+      <h2>RADIUS</h2>
+      <p id='planet-radius'></p>
+    </div>
+    <button onclick="changeTemp()" class="col-lg-2 offset-lg-1 info-box tempBox">
+      <h2>AVERAGE TEMPERATURE</h2>
+      <p id='planet-temp'></p>
+    </button>
+  </div>
+
+  <!-- Stars in the background -->
+  <div id="stars"></div>
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

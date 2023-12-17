@@ -1,0 +1,117 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #00151F;
+  color: white;
+}
+
+h1 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 68px;
+}
+
+/* Navigation bar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Navigation Bar Planets */
+.planets-list {
+  margin-top: 15px;
+  display: flex;
+}
+
+.planets-list button {
+  margin-left: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+  outline: none;
+  transition: text-decoration 0.3s, color 0.3s;
+}
+
+.planets-list button:hover,
+.planets-list button.active {
+  color: #E44D03;
+}
+
+/* Planet Content */
+.planet-info {
+  text-align: center;
+}
+
+#planet-image {
+  max-width: 50%;
+  height: auto;
+
+  display: block;
+  margin: 0 auto;
+}
+
+
+.info-box {
+  border: 1px solid gray;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 5px;
+  width: calc(25% - 10px);
+  box-sizing: border-box;
+  /* Include padding and border in the width */
+  display: inline-block;
+  /* Align boxes in a row */
+  text-align: left;
+}
+
+.info-box h2 {
+  margin: 0 0 10px 0;
+  font-size: 0.85em;
+  color: darkgrey;
+}
+
+.info-box p {
+  margin: 0;
+  font-size: 2em;
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+}
+
+.tempBox {
+  background-color: transparent;
+  color: white
+}
+
+.tempBox:hover,
+.tempBox:hover h2 {
+  background-color: #E44D03;
+  color: #00151F;
+}
+
+/* Stars in the background */
+#stars {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.star {
+  position: absolute;
+  background-color: white;
+  background: radial-gradient(circle, white 50%, transparent 60%);
+  border-radius: 50%;
+  box-shadow: 0 0 2px white;
+}
